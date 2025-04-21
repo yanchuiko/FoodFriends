@@ -1,0 +1,13 @@
+appId: host.exp.Exponent
+---
+- launchApp
+- tapOn: "FoodFriends"
+
+- tapOn: "Enter your email"
+- inputText: "user1@gmail.com"
+
+- tapOn: "Enter your password"
+- inputText: "123456"
+- tapOn: "return"
+
+- tapOn: "Log in"

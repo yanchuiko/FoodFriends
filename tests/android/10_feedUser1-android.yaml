@@ -1,0 +1,32 @@
+appId: host.exp.exponent
+---
+- launchApp
+- tapOn: "FoodFriends"
+
+- tapOn: "Enter your email"
+- inputText: "user1@gmail.com"
+
+- tapOn: "Enter your password"
+- inputText: "123456"
+
+- tapOn: "Log in"
+
+- tapOn: { id: "like-button" }
+
+- tapOn: { id: "comment-button" }
+- tapOn: "Write a comment..."
+- inputText: "Cool picture!"
+- tapOn:
+    point: "50%,50%"
+- tapOn: { id: "send-comment" }
+- tapOn: { id: "close-comment" }
+
+- tapOn: { id: "share-button" }
+- tapOn: "User 2"
+- tapOn: "Share Post"
+
+- tapOn: "Type a message..."
+- inputText: "Hi. Your post is also cool!"
+- tapOn: { id: "send-button" }
+
+- tapOn: { id: "back-arrow" }

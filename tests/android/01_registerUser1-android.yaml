@@ -1,0 +1,24 @@
+appId: host.exp.exponent
+---
+- launchApp
+- tapOn: "FoodFriends"
+
+- tapOn: { id: "register" }
+
+- tapOn: { id: "avatar-icon" }
+- tapOn: "Photo taken on Mar 28, 2025 2:20 PM"
+- tapOn: "CROP"
+
+- tapOn: "Enter your name"
+- inputText: "User 1"
+
+- tapOn: "Enter your email"
+- inputText: "user1@gmail.com"
+
+- tapOn: "Create a password"
+- inputText: "123456"
+
+- tapOn: "Confirm your password"
+- inputText: "123456"
+
+- tapOn: "Create Account"

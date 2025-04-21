@@ -1,0 +1,25 @@
+appId: host.exp.Exponent
+---
+- launchApp
+- tapOn: "FoodFriends"
+
+- tapOn: "Enter your email"
+- inputText: "user1@gmail.com"
+
+- tapOn: "Enter your password"
+- inputText: "123456"
+- tapOn: "return"
+
+- tapOn: "Log in"
+
+- tapOn: "post, tab, 3 of 5"
+- tapOn:
+    id: "image-picker-button"
+- tapOn: "Photo, 09 October 2009, 22:09"
+
+- tapOn: { id: "description-box" }
+- inputText: "User 1 Post"
+- tapOn: "return"
+
+- tapOn:
+    id: "post-button"
