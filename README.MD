@@ -19,16 +19,20 @@ Before running the project, make sure the following are installed:
 
 ```bash
 git clone https://github.com/yanchuiko/final-project.git
-cd FoodFriends
+cd final-project
 ```
 
-### 2. Install Dependencies
+### 2. Environment Variables
+
+- Add a `.env` file from the REPORT
+
+### 3. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Start the App
+### 4. Start the App
 
 ```bash
 npx expo start
@@ -49,12 +53,12 @@ npx expo start
 - **iOS**:
   - Install Xcode from the Mac App Store
   - Start the iOS Simulator
-  - Run `npx expo start --ios`
+  - Run `npx expo start --ios` or `npm run ios` in your terminal
 - **Android**:
   - Install Android Studio
   - Set up an Android Virtual Device
   - Start the emulator
-  - Run `npx expo start --android`
+  - Run `npx expo start --android` or `npm run android` in your terminal
 
 ## Testing
 
@@ -80,7 +84,17 @@ maestro test testName.yaml
 
 ## Additional
 
-## 24 Hour Post Feature
+### 1. Existing Users Credentials
+
+| **Name**      | **Email**        | **Password** |
+| ------------- | ---------------- | ------------ |
+| Ben Smith     | ben@gmail.com    | ben123       |
+| Phoebe Miller | phoebe@gmail.com | phoebe123    |
+| Leo Walker    | leo@gmail.com    | leo123       |
+| Freya Green   | freya@gmail.com  | freya123     |
+
+### 2. 24 Hour Post Feature
+
 - Go to the 'app/(tabs)/index.tsx' file. Uncomment the "twentyFourHoursAgo" fucntion. Uncomment the "postsQuery" REAL version. Comment the "postsQuery" DEMO version.
 - This will allow you to see posts from the last 24 hours.
 
