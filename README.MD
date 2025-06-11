@@ -10,16 +10,15 @@ Before running the project, make sure the following are installed:
 
 - [Node.js (LTS version)](https://nodejs.org/) – includes `npm`
 - [Git](https://git-scm.com/) – to clone the repository
-
-- A code editor like **Visual Studio Code** (optional, but recommended)
+- [Expo Go SDK 52](https://expo.dev/go) – for running the app on mobile devices
 
 ## Setup Instructions
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yanchuiko/final-project.git
-cd final-project
+git clone https://github.com/yanchuiko/FoodFriends.git
+cd FoodFriends
 ```
 
 ### 2. Environment Variables
