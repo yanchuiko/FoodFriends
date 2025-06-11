@@ -110,25 +110,25 @@ export default function HomeScreen() {
       // !SO YOU CAN SEE THE POSTS FROM THE REPORT
       // !CAN BE CHANGED BACK TO REAL VERSION IF YOU WANT TO TEST IT
       // Get posts from the last 24 hours
-      // const twentyFourHoursAgo = Timestamp.fromDate(
-      //   new Date(Date.now() - 24 * 60 * 60 * 1000)
-      // );
-
-      // !DEMO VERSION
-      const postsQuery = query(
-        collection(db, "posts"),
-        where("userId", "in", friendIds),
-        orderBy("createdAt", "desc")
+      const twentyFourHoursAgo = Timestamp.fromDate(
+        new Date(Date.now() - 24 * 60 * 60 * 1000)
       );
 
-      // !REAL VERSION
-      // Query latest posts from friends
+      // !DEMO VERSION
       // const postsQuery = query(
       //   collection(db, "posts"),
       //   where("userId", "in", friendIds),
-      //   where("createdAt", ">=", twentyFourHoursAgo),
       //   orderBy("createdAt", "desc")
       // );
+
+      // !REAL VERSION
+      // Query latest posts from friends
+      const postsQuery = query(
+        collection(db, "posts"),
+        where("userId", "in", friendIds),
+        where("createdAt", ">=", twentyFourHoursAgo),
+        orderBy("createdAt", "desc")
+      );
 
       // Listen to post updates
       unsubscribePosts = onSnapshot(postsQuery, async (postSnapshots) => {
