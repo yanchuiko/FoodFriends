@@ -37,8 +37,8 @@ cd FoodFriends
 
 Copy the following Firebase security rules into your Firebase Console:
 
-- **Firestore Rules:** Paste from `firebase/firestore.rules`
-- **Storage Rules:** Paste from `firebase/storage.rules`
+- **Firestore Rules:** Paste from `rules/firestore.rules`
+- **Storage Rules:** Paste from `rules/storage.rules`
 
 #### Firestore Composite Indexes
 
